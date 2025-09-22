@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glassy Auth — Luminous Authentication Portal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="background">
+    <div class="particles"></div>
+  </div>
+
+  <div class="container">
+    <!-- Login Panel -->
+    <div class="auth-panel active" id="login-panel">
+      <h2 class="panel-title">Welcome Back</h2>
+      <p class="panel-subtitle">Sign in to continue</p>
+      
+      <form class="auth-form">
+        <div class="input-group">
+          <input type="email" id="login-email" required />
+          <label for="login-email">Email Address</label>
+          <div class="input-glow"></div>
+        </div>
+        
+        <div class="input-group password-container">
+          <input type="password" id="login-password" required />
+          <label for="login-password">Password</label>
+          <i class="fas fa-eye-slash toggle-password" data-target="login-password"></i>
+          <div class="input-glow"></div>
+        </div>
+        
+        <a href="#" class="forgot-link">Forgot Password?</a>
+        
+        <button type="button" class="btn-primary">Sign In</button>
+
+        <!-- ✅ MOVED FOOTER INSIDE FORM -->
+        <footer class="footer-glow inside-form">
+          <p>By continuing, you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a></p>
+        </footer>
+      </form>
+      
+      <div class="social-divider">
+        <span>or continue with</span>
+      </div>
+      
+      <div class="social-buttons">
+        <button class="btn-social google">
+          <i class="fab fa-google"></i>
+          <span>Sign in with Google</span>
+        </button>
+        <button class="btn-social facebook">
+          <i class="fab fa-facebook-f"></i>
+          <span>Sign in with Facebook</span>
+        </button>
+      </div>
+      
+      <p class="switch-text">
+        Don't have an account? 
+        <a href="#" class="switch-link" data-target="signup-panel">Sign Up</a>
+      </p>
+    </div>
+
+    <!-- Sign Up Panel -->
+    <div class="auth-panel" id="signup-panel">
+      <h2 class="panel-title">Create Account</h2>
+      <p class="panel-subtitle">Join the luminous experience</p>
+      
+      <form class="auth-form">
+        <div class="input-group">
+          <input type="text" id="signup-name" required />
+          <label for="signup-name">Full Name</label>
+          <div class="input-glow"></div>
+        </div>
+        
+        <div class="input-group">
+          <input type="email" id="signup-email" required />
+          <label for="signup-email">Email Address</label>
+          <div class="input-glow"></div>
+        </div>
+        
+        <div class="input-group password-container">
+          <input type="password" id="signup-password" required />
+          <label for="signup-password">Password</label>
+          <i class="fas fa-eye-slash toggle-password" data-target="signup-password"></i>
+          <div class="input-glow"></div>
+        </div>
+        
+        <button type="button" class="btn-primary">Create Account</button>
+
+        <!-- ✅ MOVED FOOTER INSIDE FORM -->
+        <footer class="footer-glow inside-form">
+          <p>By continuing, you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a></p>
+        </footer>
+      </form>
+      
+      <div class="social-divider">
+        <span>or sign up with</span>
+      </div>
+      
+      <div class="social-buttons">
+        <button class="btn-social google">
+          <i class="fab fa-google"></i>
+          <span>Sign up with Google</span>
+        </button>
+        <button class="btn-social facebook">
+          <i class="fab fa-facebook-f"></i>
+          <span>Sign up with Facebook</span>
+        </button>
+      </div>
+      
+      <p class="switch-text">
+        Already have an account? 
+        <a href="#" class="switch-link" data-target="login-panel">Sign In</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+  </html>
